@@ -43,29 +43,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        lifecycleScope.launchWhenStarted {
-//            themeViewModel.themeMode.collect { mode ->
-//                when (mode) {
-//                    ThemeMode.SYSTEM -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-//                    ThemeMode.LIGHT -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-//                    ThemeMode.DARK -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-//                }
-//            }
-//        }
-//        // ✅ Replace deprecated launchWhenStarted with repeatOnLifecycle
-//        lifecycleScope.launch {
-//            repeatOnLifecycle(Lifecycle.State.STARTED) {
-//                themeViewModel.themeMode
-//                    .collect { mode ->
-//                    when (mode) {
-//                        ThemeMode.SYSTEM -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-//                        ThemeMode.LIGHT -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-//                        ThemeMode.DARK -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-//                    }
-//                }
-//            }
-//        }
-//         ✅Replace the theme collection code in onCreate with:
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 themeViewModel.themeMode.collect { mode ->
@@ -101,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
 //        // ✅ Call WorkManager, Delay non-critical work until after first render
 //        scheduleNewsSync()
-//        binding.root.post { scheduleNewsSync() }
+        binding.root.post { scheduleNewsSync() }
 
         // ✅ Hide bottom nav for detail
         val fragmentsToHideBottomNav = setOf( R.id.detailFragment ) // add more if needed
@@ -124,32 +101,6 @@ class MainActivity : AppCompatActivity() {
 //        Log.d("MainActivityDebug", "onNewIntent extras=$extras")
         handleWidgetIntent(intent)
     }
-
-//    private fun scheduleNewsSync() {
-//
-//        val constraints = Constraints.Builder()
-//            .setRequiredNetworkType(NetworkType.CONNECTED)
-//            .build()
-//
-//        //  ✅ For testing: run immediately
-////        val testRequest = OneTimeWorkRequestBuilder<NewsSyncWorker>()
-////            .setConstraints(constraints)
-////            .build()
-////        WorkManager.getInstance(this).enqueue(testRequest)
-//
-//
-//        // val request = PeriodicWorkRequestBuilder<NewsSyncWorker>(6, TimeUnit.HOURS)
-//        val request = PeriodicWorkRequestBuilder<NewsSyncWorker>(12, TimeUnit.HOURS)
-//            .setConstraints(constraints)
-//            .build()
-//
-//        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-//            "news_sync",
-//            ExistingPeriodicWorkPolicy.KEEP,
-//            request
-//        )
-//
-//    }
 
     //    Make WorkManager initialization lazy
     private var workRequestInitialized = false
@@ -217,58 +168,3 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
-
-
-/*
-
- app/
-└── src/
-    ├── main/                ← production code
-    │   └── java/...
-    ├── test/                ← unit tests
-    │   └── java/...
-    └── androidTest/         ← instrumented (UI) tests
-        └── java/...
-
- */
-
-/*
- app/
-└── src/
-    ├── main/
-        ├── Home Frag & Home ViewModel & Home Pager Adapter
-        |   └── News List Frag & News List ViewModel & News Adapter
-        |       └── Detail Frag & Detail ViewModel
-        ├── News Frag/
-        │   └── java/...
-        └── Saved Frag
-        └── Sources Frag & Sources ViewModel & Sources Adapter
-        └── Settings Frag/
-
-        ui/settings/
- ├─ SettingsFragment.kt
- ├─ SettingsViewModel.kt
- ├─ ImportExportHandler.kt   // handles Import/Export bookmarks
- ├─ AnalyticsHandler.kt      // handles analytics switch
- ├─ ThemeHandler.kt          // handles theme toggle
-
- */
-
-
-/*
-main.xml/
-    ├── Home Frag/                ← production code
-    |   └── News List Frag
-    |   |   └── Item Article
-    |   └── News Detail Frag
-    ├── News Frag/
-    │   └── java/...
-    └── Saved Frag/
-    │   └── java/...
-    └── Sources Frag/
-    │   └── Item Sources
-    └── Settings Frag/
-    |    └── java/...
-    └── Detail Frag/
-        └── Item Sources
- */
