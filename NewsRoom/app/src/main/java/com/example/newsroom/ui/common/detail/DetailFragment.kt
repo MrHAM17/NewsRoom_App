@@ -96,8 +96,6 @@ class DetailFragment: Fragment() {
 
         val bookmarkAction = arguments?.getString(ARG_BOOKMARK_ACTION) ?: "add"
 
-
-
 //        Log.d("DetailDebug", "title: $title")
 //        Log.d("DetailDebug", "desc: $description")
 //        Log.d("DetailDebug", "content: $content")
@@ -107,8 +105,6 @@ class DetailFragment: Fragment() {
 //        Log.d("DetailDebug", "author: $author")
 //        Log.d("DetailDebug", "publishedAt: $publishedAt")
 //        Log.d("DetailDebug", "id: $id")
-
-
 
         if (bookmarkAction == "add")
         {

@@ -21,7 +21,6 @@ class App : Application(), Configuration.Provider {
 }
 
 
-
 //package com.example.newsroom
 //
 //import android.app.Application
