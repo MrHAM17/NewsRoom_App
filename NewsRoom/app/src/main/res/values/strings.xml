@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NewsRoom</string>
+    <string name="tab_name">home</string>
+    <string name="tab_saved">Saved\n</string>
+    <string name="tab_sources">Sources</string>
+    <string name="tab_settings">Settings</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_in_browser">Open in browser..</string>
+
+    <string name="save_bookmark">Add bookmark</string>
+    <string name="already_bookmarked">Added in bookmarked</string>
+    <string name="remove_bookmark">Remove Bookmark</string>
+
+    <string name="share">Share</string>
+    <string name="news_image">news image</string>
+    <string name="confirm_remove_title">Remove Bookmark\n</string>
+    <string name="confirm_remove_message">Are you sure you want to remove this bookmark?</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_description">No description..</string>
+    <string name="no_content">No content..</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="no_results_available">No results available</string>
+
+    <!-- Settings Fragment Strings -->
+    <string name="delete_all_bookmarks_title">Delete all bookmarks?</string>
+    <string name="delete_all_bookmarks_message">This action cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="all_bookmarks_deleted">All bookmarks deleted</string>
+    <string name="failed_to_delete_bookmarks">Failed to delete all bookmarks</string>
+    <string name="appearance">Appearance</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="privacy_and_analytics">Privacy and Analytics</string>
+</resources>

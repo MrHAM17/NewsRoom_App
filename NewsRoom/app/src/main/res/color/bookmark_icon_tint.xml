@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?attr/colorPrimary" android:state_selected="true"/>
+    <item android:color="?attr/colorOnSurface" android:state_selected="false"/>
+</selector>
+
+
+<!--  🔹Difference between res/values/colors.xml and res/color/*.xml-->
+
+<!--    res/values/colors.xml & res/values-night/colors.xml →
+           for solid color values (like #1976D2) or named theme colors (colorPrimary, colorOnSurface).-->
+
+<!--    res/color/*.xml →
+           for stateful color selectors (e.g., button text color changes depending on pressed/selected state).-->
