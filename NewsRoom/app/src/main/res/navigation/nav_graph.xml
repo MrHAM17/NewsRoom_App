@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.newsroom.ui.home.HomeFragment"
+        android:label="@string/tab_name">
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@+id/detailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.newsroom.ui.saved.SavedFragment"
+        android:label="@string/tab_saved">
+    <action
+        android:id="@+id/action_saved_to_detail"
+        app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sourcesFragment"
+        android:name="com.example.newsroom.ui.sources.SourcesFragment"
+        android:label="@string/tab_sources"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.newsroom.ui.settings.SettingsFragment"
+        android:label="@string/tab_settings"/>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.newsroom.ui.search.SearchFragment"
+        android:label="Search">
+        <action
+            android:id="@+id/action_search_to_detail"
+            app:destination="@+id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.newsroom.ui.common.detail.DetailFragment"
+        android:label="Detail">
+
+<!--        <argument android:name="arg_article_id" app:argType="string"/>-->
+<!--        <argument android:name="arg_url" app:argType="string"/>-->
+<!--        <argument android:name="arg_title" app:argType="string"/>-->
+<!--        <argument android:name="arg_source" app:argType="string" android:nullable="true"/>-->
+<!--        <argument android:name="arg_image" app:argType="string" android:nullable="true"/>-->
+
+<!--        <argument android:name="bookmarkAction" app:argType="string" android:defaultValue="add" />-->
+
+<!--        <deepLink app:uri="myapp://detailFragment" />   &lt;!&ndash; can be any scheme/host &ndash;&gt;-->
+
+    </fragment>
+
+    <!-- res/navigation/nav_graph.xml -->
+
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="red">#D32F2F</color> &lt;!&ndash; Material Red 700 &ndash;&gt;-->
+<!--    <color name="blue">#1976D2</color> &lt;!&ndash; Material Blue 700 &ndash;&gt;-->
+
+    <color name="colorPrimary">#1976D2</color> <!-- Blue 700 -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <color name="colorError">#D32F2F</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="tab_selected">#1976D2</color> <!-- Blue -->
+    <color name="tab_unselected">#808080</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+</resources>
+
