@@ -23,15 +23,15 @@
 ## Screenshots:
 **Light Theme:**
 
-![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%201.png)
-![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%202.png)
+![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%2001.png)
+![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%2002.png)
 **Dark Theme:**
 
-![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%203.png)
-![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%204.png)
+![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%2003.png)
+![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%2004.png)
 **Notification & Widget Support:**
 
-![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%205.png)
+![](https://github.com/MrHAM17/NewsRoom_App/blob/main/Rough%20Work%20%26%20Data/Output%20Data/Screenshots/v1.0.0%20Slides/Slide%2005.png)
 
 ## Table of contents
 
