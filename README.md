@@ -120,7 +120,7 @@ For accurate, production-like results:
    Run in terminal:
 
    ```bash
-   keytool -genkeypair -v -keystore keystore/release-keystore.jks \
+   keytool -genkeypair -v -keystore release-keystore.jks \
      -alias myappkey -keyalg RSA -keysize 2048 -validity 10000
    ```
 
@@ -141,8 +141,8 @@ For accurate, production-like results:
 
 3. **Place the Keystore File**
 
-   * Create a folder named `keystore/` in the **project root**.
-   * Place the generated `release-keystore.jks` file inside it.
+   * Create a directory named `keystore/` in the **project root**.
+   * Place the generated `release-keystore.jks` file from project-root folder to inside that directory.
    * Keep it **private**, **do not commit**, and **store a backup copy** (preferably encrypted for CI/CD injection).
 
 #
