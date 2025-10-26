@@ -207,8 +207,8 @@ android {
         // -------------------------
         // RELEASE SIGNING CONFIG SETUP
         // -------------------------
-        // 1. Generate a release keystore using keytool (Run below command here in terminal as it is) -->
-        //      keytool -genkey -v -keystore keystores/release-keystore.jks -alias myappkey -keyalg RSA -keysize 2048 -validity 10000
+        // 1. Generate a release keystore using keytool (Run below command here in terminal as it is) & in project folder create a Directory "keystore" & paste the generated "release-keystore.jks" file from prject folder to inside that directory -->
+        //      keytool -genkey -v -keystore release-keystore.jks -alias myappkey -keyalg RSA -keysize 2048 -validity 10000
         // 2. Entered the keystore password during generation (used same for key password).
         // 3️. Added the following 4 variables to local.properties:
         //      RELEASE_STORE_FILE=keystore/release-keystore.jks
