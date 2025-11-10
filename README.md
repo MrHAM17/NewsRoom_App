@@ -386,4 +386,3 @@ adb shell dumpsys package com.example.newsroom.benchmark | grep debuggable
 
 ---
 
-
